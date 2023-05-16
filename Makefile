@@ -13,7 +13,8 @@ launch:
 	npx electron dist/main.js
 
 build: \
-	dist/main.js
+	dist/main.js \
+	dist/renderer.js
 
 clean:
 	rm -rf dist
@@ -26,6 +27,9 @@ node_modules:
 
 dist/main.js: src/main.ts | dist
 	npx tsc
+
+dist/renderer.js: src/renderer.ts | dist
+	npx tsc --project tsconfig.renderer.json
 
 dist:
 	test -d $@ || mkdir -p $@
