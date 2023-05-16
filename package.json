@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/three": "^0.152.0",
     "electron": "^24.3.0",
     "typescript": "^5.0.4"
   },
