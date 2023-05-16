@@ -22,7 +22,7 @@ node_modules:
 	npm install
 
 dist/main.js: src/main.ts | dist
-	npx tsc --outDir $(dir $@) $<
+	npx tsc
 
 dist:
 	test -d $@ || mkdir -p $@
