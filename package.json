@@ -11,5 +11,8 @@
   "devDependencies": {
     "electron": "^24.3.0",
     "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "three": "^0.152.2"
   }
 }
