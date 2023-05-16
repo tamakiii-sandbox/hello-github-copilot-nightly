@@ -26,10 +26,10 @@ node_modules:
 	npm install
 
 dist/main.js: src/main.ts | dist
-	npx tsc
+	npx parcel build $< --target electron
 
 dist/renderer.js: src/renderer.ts | dist
-	npx tsc --project tsconfig.renderer.json
+	npx parcel build $< --target browser
 
 dist:
 	test -d $@ || mkdir -p $@
