@@ -1,4 +1,4 @@
-.PHONY: help install uninstall launch build clean
+.PHONY: help install uninstall launch build clean test
 
 help:
 	@cat $(firstword $(MAKEFILE_LIST))
@@ -19,6 +19,9 @@ build: \
 clean:
 	rm -rf dist/main.js
 	rm -rf dist/index.html
+
+test:
+	npx jest
 
 node_modules:
 	npm install
