@@ -1,8 +1,13 @@
 {
   "compilerOptions": {
+    "target": "es6",
     "module": "commonjs",
     "noImplicitAny": true,
     "sourceMap": true,
+    "strict": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
     "outDir": "dist",
     "baseUrl": ".",
     "paths": {
@@ -11,5 +16,9 @@
   },
   "include": [
     "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "src/renderer.ts"
   ]
 }
