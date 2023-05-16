@@ -13,13 +13,18 @@ launch:
 	npx electron dist/main.js
 
 build: \
+	dist/index.html \
 	dist/main.js
 
 clean:
 	rm -rf dist/main.js
+	rm -rf dist/index.html
 
 node_modules:
 	npm install
+
+dist/index.html: src/index.html
+	cp $< $@
 
 dist/main.js: src/main.ts | dist
 	npx tsc
