@@ -1,0 +1,25 @@
+{
+  "name": "hello-github-copilot-nightly",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/electron": "^1.6.10",
+    "@types/jest": "^29.5.1",
+    "@types/three": "^0.152.0",
+    "electron": "^24.3.0",
+    "jest": "^29.5.0",
+    "ts-jest": "^29.1.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "parcel-bundler": "^1.12.5",
+    "three": "^0.152.2"
+  }
+}
